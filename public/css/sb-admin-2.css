@@ -9812,8 +9812,8 @@ a:focus {
 .container-md,
 .container-lg,
 .container-xl {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 .scroll-to-top {
@@ -11278,4 +11278,25 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<< Tambahan CSS >>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.fa-star {
+  width: 15px;
+  color: var(--yellow);
+}
+
+.fa-star-half-alt {
+  color: var(--yellow);
+}
+
+.btn-booking {
+  font-size: 12px;
+}
+
+.btn a {
+  color: var(--white);
+  text-decoration: none;
 }

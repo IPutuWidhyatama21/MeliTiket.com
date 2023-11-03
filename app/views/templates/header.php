@@ -18,6 +18,8 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <LInk href="<?= BASEURL ?>/css/sb-admin-2.min.css" rel="stylesheet"></LInk>
+    <Link href="<?= BASEURL ?>/css/sb-admin-2.min.css" rel="stylesheet"></Link>
+    <Link href="<?= BASEURL ?>/css/sb-admin-2.css" rel="stylesheet"></Link>
 
 </head>
+<body id="page-top">

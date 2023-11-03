@@ -1,5 +1,3 @@
-<body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -37,15 +35,15 @@
             <!-- Nav Item - Pesanan Saya -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-ticket-alt"></i>
                     <span>Pesanan Saya</span>
                 </a>
             </li>
 
             <!-- Nav Item - Booking Tiket -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <a class="nav-link" href="<?= BASEURL ?>/home/booking">
+                    <i class="fas fa-shopping-cart"></i>
                     <span>Booking Tiket</span>
                 </a>
             </li>
@@ -181,33 +179,89 @@
                         <div class="card">
                             <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title text-center">Card title</h5>
+                                <hr>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <hr>
+                                <p class="card-text"><small class="text-muted">Rp. 100.000</small></p>
+                                <div class="card-footers row">
+                                    <div class="rating col-6">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-booking">Booking Sekarang</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card">
                             <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title text-center">Card title</h5>
+                                <hr>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <hr>
+                                <p class="card-text"><small class="text-muted">Rp. 100.000</small></p>
+                                <div class="card-footers row">
+                                    <div class="rating col-6">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-booking">Booking Sekarang</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card">
                             <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title text-center">Card title</h5>
+                                <hr>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <hr>
+                                <p class="card-text"><small class="text-muted">Rp. 100.000</small></p>
+                                <div class="card-footers row">
+                                    <div class="rating col-6">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-booking">Booking Sekarang</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card">
                             <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title text-center">Card title</h5>
+                                <hr>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <hr>
+                                <p class="card-text"><small class="text-muted">Rp. 100.000</small></p>
+                                <div class="card-footers row">
+                                    <div class="rating col-6">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-booking">Booking Sekarang</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
