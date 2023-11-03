@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>MeliTiket.com</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="../../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <LInk href="../../../public/css/sb-admin-2.min.css" rel="stylesheet"></LInk>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></link> -->
-
-</head>
-
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -34,7 +9,8 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <img src="<?= BASEURL ?>/img/melitiket_logo.svg" alt="" srcset="">
+                    <!-- <i class="fas fa-laugh-wink"></i> -->
                 </div>
                 <div class="sidebar-brand-text mx-3">MeliTiket.com</div>
             </a>
@@ -46,7 +22,8 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Beranda</span></a>
+                    <span>Beranda</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -61,18 +38,25 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Pesanan Saya</span></a>
+                    <span>Pesanan Saya</span>
+                </a>
             </li>
 
             <!-- Nav Item - Booking Tiket -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Booking Tiket</span></a>
+                    <span>Booking Tiket</span>
+                </a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <!-- Sidebar Button Closer (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
 
         </ul>
         <!-- End of Sidebar Section -->
@@ -136,7 +120,7 @@
                         <!-- Nav Item - Messages -->
                         <li class="nav-item d-flex align-items-center mr-5">
                             
-                            <img src="../../../public/img/undraw_profile.svg" alt="" srcset="" class="mr-2">
+                            <img src="<?= BASEURL ?>/img/undraw_profile.svg" alt="" srcset="" class="mr-2">
                             <a href="http://">Login</a>
 
                         </li>
@@ -166,13 +150,13 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <img src="../../../public/img/slider_img.jpg" class="d-block w-100" alt="...">
+                            <img src="<?= BASEURL ?>/img/slider_img.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                            <img src="../../../public/img/slider_img.jpg" class="d-block w-100" alt="...">
+                            <img src="<?= BASEURL ?>/img/slider_img.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                            <img src="../../../public/img/slider_img.jpg" class="d-block w-100" alt="...">
+                            <img src="<?= BASEURL ?>/img/slider_img.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -195,7 +179,7 @@
                     <!-- Card Section -->
                     <div class="card-deck mt-5 mb-5">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -203,7 +187,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -211,7 +195,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -219,7 +203,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -275,26 +259,3 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="../../../public/vendor/jquery/jquery.min.js"></script>
-    <script src="http://localhost/MeliTiket.Com/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="../../../public/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="../../../public/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="../../../public/vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="../../../public/js/demo/chart-area-demo.js"></script>
-    <script src="../../../public/js/demo/chart-pie-demo.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
