@@ -119,7 +119,7 @@
                         <li class="nav-item d-flex align-items-center mr-5">
                             
                             <img src="<?= BASEURL ?>/img/undraw_profile.svg" alt="" srcset="" class="mr-2">
-                            <a href="http://">Login</a>
+                            <a href="<?= BASEURL ?>/Login">Login</a>
 
                         </li>
                         <!-- End of -->
@@ -176,8 +176,42 @@
 
                     <!-- Card Section -->
                     <div class="card-deck mt-5 mb-5">
+
+                        <!-- PHP Code For Each -->
+                        <?php foreach ( $data['tiket'] as $contentTiket ) : ?>
+
+                         <!-- Content Of Card -->
                         <div class="card">
                             <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><?= $contentTiket['nama_tiket'] ?></h5>
+                                <hr>
+                                <p class="card-text"><?= $contentTiket['Keterangan'] ?></p>
+                                <hr>
+                                <p class="card-text"><small class="text-muted">Rp. <?= $contentTiket['harga_tiket'] ?></small></p>
+                                <div class="card-footers row">
+                                    <div class="rating col-6">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn btn-primary btn-booking">Booking Sekarang</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Content of Card -->
+
+                        <?php endforeach; ?>
+                        <!-- End of PHP For Each -->
+
+
+                        <!-- Prototype UI Card Design -->
+                        <!-- <div class="card">
+                            <img src="/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Card title</h5>
                                 <hr>
@@ -199,7 +233,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
+                            <img src="/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Card title</h5>
                                 <hr>
@@ -221,7 +255,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
+                            <img src="/img/besakih-temple.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Card title</h5>
                                 <hr>
@@ -241,29 +275,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <img src="<?= BASEURL ?>/img/besakih-temple.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Card title</h5>
-                                <hr>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <hr>
-                                <p class="card-text"><small class="text-muted">Rp. 100.000</small></p>
-                                <div class="card-footers row">
-                                    <div class="rating col-6">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <div class="col-6">
-                                        <button class="btn btn-primary btn-booking">Booking Sekarang</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
+                        <!-- End Prototype UI Card Design -->
+
                     </div>
                     <!-- End of Card Section -->
 

@@ -1,12 +1,13 @@
 <?php
 
 class Login extends Controller{
+
     public function index(){
         $this->view('templates/header');
         $this->view('login/index');
         $this->view('templates/footer');
     }
-    public function log(){
+    public function log() {
         $email = $_POST['email'];
         $pass = $_POST['pass'];
 

@@ -139,7 +139,8 @@
                 <div class="container-sm bg-white shadow rounded p-5">
                     <div class="form">
                         <h1 class="text-center mt-2 mb-5">Booking Tiket</h1>
-                        <form action="" method="post">
+
+                        <form action="<?= BASEURL ?>/home/addbooking" method="post">
                             <div class="form-group row">
                                 <label for="nama" class="col-sm-3 col-form-label">Nama</label>
                                 <div class="col-sm-9">
@@ -149,44 +150,56 @@
                             <div class="form-group row">
                                 <label for="tujuan" class="col-sm-3 col-form-label">Tujuan</label>
                                 <div class="col-sm-9">
-                                    <select class="form-control" id="tujuan">
-                                        <option>Besakih Temple</option>
-                                        <option>Sanur Beachs</option>
-                                        <option>Besakih</option>
+                                    <select class="form-control" id="tujuan" name="tujuan">
+
+                                    <!-- PHP ForEach -->
+                                    <?php foreach ( $data['tiket'] as $rowBooking ) : ?>
+
+                                        <option><?= $rowBooking['nama_tiket'] ?></option>
+
+                                    <?php endforeach ?>
+                                    <!-- End PHP ForEach -->
+                                    
                                     </select>
+
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="harga" class="col-sm-3 col-form-label">Harga Tiket</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="harga" readonly>
+
+                                    <input type="text" class="form-control" id="harga" name="harga" value="<?= $rowBooking['harga_tiket'] ?>" readonly>
+
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="tanggal-booking" class="col-sm-3 col-form-label">Pilih Tanggal Booking</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="tanggal-booking">
+                                    <input type="text" class="form-control" id="tanggal-booking" name="tanggal_booking">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="jumlah" class="col-sm-3 col-form-label">Jumlah Tiket</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="jumlah">
+                                    <input type="text" class="form-control" id="jumlah" name="jumlah_tiket">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="totalharga" class="col-sm-3 col-form-label">Total Harga</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="totalharga">
+                                    <input type="text" class="form-control" id="totalharga" name="total_harga">
                                 </div>
                             </div>
                             <div class="button d-flex justify-content-end mt-5 mb-4">
                                 <button class="btn btn-danger mr-2">
                                     <a href="<?= BASEURL ?>/home">Kembali</a>
                                 </button>
-                                <button class="btn btn-primary ml-2">Booking Sekarang</button>
+                                <button type="submit" class="btn btn-primary ml-2">
+                                    Booking Sekarang
+                                </button>
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <!-- End of Container Form -->
