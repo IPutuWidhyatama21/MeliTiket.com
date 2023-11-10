@@ -115,19 +115,15 @@
                         </li>
                         <!--  -->
 
-                        <!-- Nav Item - Messages -->
-                        <li class="nav-item d-flex align-items-center mr-5">
-                            
-                            <img src="<?= BASEURL ?>/img/undraw_profile.svg" alt="" srcset="" class="mr-2">
-                            <a href="<?= BASEURL ?>/Login">Login</a>
-
-                        </li>
-                        <!-- End of -->
-
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
-                        <button class="btn btn-primary">Sign In</button>
+                        <li class="nav-item d-flex align-items-center mr-5">
+                            
+                            <a href="<?= BASEURL ?>/profile">User</a>
+                            <img src="<?= BASEURL ?>/img/undraw_profile.svg" alt="" srcset="" class="ml-2">
+
+                        </li>
                         <!--  -->
 
                     </ul>
