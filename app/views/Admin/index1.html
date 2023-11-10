@@ -51,7 +51,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a
           >
@@ -65,7 +65,7 @@
 
         <!-- Nav Item - Ticket -->
         <li class="nav-item">
-          <a class="nav-link" href="ticket.php">
+          <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-ticket-alt"></i>
             <span>Ticket</span></a
           >
@@ -408,8 +408,7 @@
                 type="button"
                 class="btn btn-primary"
                 data-toggle="modal"
-                data-target="#exampleModal"
-              >
+                data-target="#exampleModal">
                 Tambah Tiket
               </button>
 
@@ -419,8 +418,7 @@
                 id="exampleModal"
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
+                aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -432,8 +430,7 @@
                         type="button"
                         class="close"
                         data-dismiss="modal"
-                        aria-label="Close"
-                      >
+                        aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
@@ -446,8 +443,7 @@
                             <input
                               type="file"
                               class="form-control-file"
-                              id="exampleFormControlFile1"
-                            />
+                              id="exampleFormControlFile1"/>
                           </div>
                         </form>
                       </div>
@@ -457,24 +453,21 @@
                       <form>
                         <div class="form-group">
                           <label for="exampleFormControlInput1"
-                            >Nama Ticket</label
-                          >
+                            >Nama Ticket</label>
                           <input
                             type="email"
                             class="form-control"
-                            id="exampleFormControlInput1"
-                          />
+                            id="exampleFormControlInput1"/>
                         </div>
 
                         <div class="form-group">
                           <label for="exampleFormControlTextarea1"
-                            >Deskripsi</label
-                          >
+                            >Deskripsi</label>
                           <textarea
                             class="form-control"
                             id="exampleFormControlTextarea1"
-                            rows="3"
-                          ></textarea>
+                            rows="3">
+                        </textarea>
                         </div>
                       </form>
 
@@ -493,10 +486,10 @@
                       <button
                         type="button"
                         class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
+                        data-dismiss="modal"> 
                         Close
                       </button>
+
                       <button type="button" class="btn btn-primary">
                         Save changes
                       </button>
@@ -508,7 +501,7 @@
 
             <!-- Button Tambah Ticket End-->
 
-
+            <!-- Button trigger modal -->
 
             <!-- Content Row -->
             <div class="row">
@@ -517,15 +510,13 @@
               <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-border-right-primary shadow h-100 py-2">
                   <div class="card-body">
-
-<!-- Terdapat masalah ,, tadi icon nya tidak dapat di pindahkan ke pojok kanan atas..
-Penyelesaian : tambahkan class item di sebelah tulisan kebun raya, tambahkan d-flex pada class tulisan kebun raya
-dan tambahkan ml-auto pada class iconnya. -->
+                    <!-- Terdapat masalah ,, tadi icon nya tidak dapat di pindahkan ke pojok kanan atas..
+                                    Penyelesaian : tambahkan class item di sebelah tulisan kebun raya, tambahkan d-flex pada class tulisan kebun raya
+                                        dan tambahkan ml-auto pada class iconnya. -->
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div
-                          class="text-l font-weight-bold text-uppercase mb-1 d-flex"
-                        >
+                          class="text-l font-weight-bold text-uppercase mb-1 d-flex">
                           Kebun Raya
                           <i class="fas fa-fw fa-info-circle ml-auto"></i>
                         </div>
@@ -536,11 +527,8 @@ dan tambahkan ml-auto pada class iconnya. -->
                     </div>
 
                     <div class="d-flex row no-gutters justify-content-end">
-                      <div class="col-auto ">
-                        
-
-<!-- menambahkan Modal Untuk Button Edit Ticket -->
-        <!-- Button Edit Tiket (Pake Modal) Start -->
+                      <div class="col-auto text-center">
+                        <!-- Button Edit Tiket (Pake Modal) Start -->
                         <button
                           type="button"
                           class="btn btn-warning"
@@ -639,9 +627,9 @@ dan tambahkan ml-auto pada class iconnya. -->
                             </div>
                           </div>
                         </div>
+
                         <!-- Button Edit Tiket (Pake Modal) End -->
 
-    <!-- Button Tong Sampah -->
                         <button type="button" class="btn btn-danger">
                           <i class="fas fa-fw fa-trash"></i>
                         </button>
@@ -1031,13 +1019,13 @@ dan tambahkan ml-auto pada class iconnya. -->
           tabindex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          
+          aria-hidden="true"
+        >
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                  Log Out
+                  Ready to Leave?
                 </h5>
                 <button
                   class="close"
@@ -1049,7 +1037,8 @@ dan tambahkan ml-auto pada class iconnya. -->
                 </button>
               </div>
               <div class="modal-body">
-                    Apakah kamu yakin ingin keluar?
+                Select "Logout" below if you are ready to end your current
+                session.
               </div>
               <div class="modal-footer">
                 <button
