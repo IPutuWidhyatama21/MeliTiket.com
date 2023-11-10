@@ -15,6 +15,19 @@ class Home extends Controller {
 
     }
 
+    public function indexs() {
+
+        $data['title'] = "Beranda";
+
+        // Deklarasi Query Data Tiket
+        $data['tiket'] = $this -> model('Tiket_model') -> queryDataTiket();
+
+        $this->view('templates/header', $data);
+        $this->view('home/index_log', $data);
+        $this->view('templates/footer');
+
+    }
+
     public function booking() {
         
         $data['title'] = 'Booking Tiket';

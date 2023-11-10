@@ -11300,3 +11300,26 @@ body.sidebar-toggled footer.sticky-footer {
   color: var(--white);
   text-decoration: none;
 }
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 18%;
+}
+
+.frofile-container .container-lg-img {
+  margin-left: .8rem;
+}
+
+.frofile-container .container-lg-form {
+  margin-right: .8rem;
+}
+
+.container-height {
+  height: 71vh;
+}
+
+.container-lg-img input[type="file"] {
+  margin-left: 18%;
+}
