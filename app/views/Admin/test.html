@@ -1,0 +1,145 @@
+<!-- Button Edit Ticket Start -->
+<button
+type="button"
+class="btn btn-primary"
+data-toggle="modal"
+data-target="#EditTicket">
+<i class="fas fa-fw fa-edit"></i>
+</button>
+
+<!-- Modal -->
+<div
+class="modal fade"
+id="EditTicket"
+tabindex="-1"
+aria-labelledby="ModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="ModalLabel">
+        Edit Tiket
+      </h5>
+
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <div class="container">
+        <!-- Item Chose File Start-->
+        <form>
+          <div class="form-group">
+            <input
+              type="file"
+              class="form-control-file"
+              id="FormControlFile"/>
+          </div>
+        </form>
+      </div>
+      <!-- Item Chose File End-->
+
+      <!-- Text Form start -->
+      <form>
+        <div class="form-group">
+          <label for="FormControlInput"
+            >Nama Ticket</label>
+          <input
+            type="email"
+            class="form-control"
+            id="FormControlInput"/>
+        </div>
+
+        <div class="form-group">
+          <label for="FormControlTextarea"
+            >Deskripsi</label>
+          <textarea
+            class="form-control"
+            id="FormControlTextarea"
+            rows="3">
+        </textarea>
+        </div>
+      </form>
+
+      <div class="form-group">
+        <label for="FormControlInput">Harga</label>
+        <input
+          type="email"
+          class="form-control"
+          id="FormControlInput"
+        />
+      </div>
+    </div>
+    <!-- text Form End -->
+
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-dismiss="modal"> 
+        Close
+      </button>
+
+      <button type="button" class="btn btn-primary">
+        Save changes
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Button Edit Ticket End-->
+
+
+
+
+
+
+
+
+
+
+    <div
+          class="modal fade"
+          id="DeleteModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="ModalLabel"
+          aria-hidden="true">
+          
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">
+                    <i class="fas fa-fw fa-trash"></i>
+                </h5>
+                <button
+                  class="close"
+                  type="button"
+                  data-dismiss="modal"
+                  aria-label="Close">
+
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    Apakah kamu yakin ingin menghapus ticket ini?
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-dismiss="modal">
+                  Cancel
+                </button>
+                <!-- <a class="btn btn-primary" href="login.html">Logout</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
