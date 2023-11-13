@@ -12,7 +12,7 @@ class Profile extends Controller {
 
     }
 
-    public function UserProfileEdit() {
+    public function ProfileEdits() {
 
         $data['title'] = 'Edit Profile';
 

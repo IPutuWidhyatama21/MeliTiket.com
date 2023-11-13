@@ -160,7 +160,7 @@
                                 </div>
                                 <div class="button d-flex justify-content-end mt-5 mb-3">
                                     <button class="btn btn-primary mr-2">
-                                        <a href="">Ubah Profile</a>
+                                        <a href="<?= BASEURL ?>/profile/ProfileEdits">Ubah Profile</a>
                                     </button>
                                 </div>
                             </form>

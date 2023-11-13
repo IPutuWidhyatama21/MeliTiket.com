@@ -11323,3 +11323,32 @@ body.sidebar-toggled footer.sticky-footer {
 .container-lg-img input[type="file"] {
   margin-left: 18%;
 }
+
+.alert-modal {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.logout-btn {
+  margin-top: 25%;
+  margin-bottom: 5%;
+  background-color: #00000015;
+}
+
+.logout-button {
+  margin-top: 5%;
+  left: 30%;
+}
+
+.carousel button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+  border: 0;
+  background-color:#FFFFFF00;
+}
+
+.carousel .w-100 {
+  height: 75vh;
+}

@@ -140,7 +140,7 @@
                     <div class="form">
                         <h1 class="text-center mt-2 mb-5">Booking Tiket</h1>
 
-                        <form action="<?= BASEURL ?>/home/addbooking" method="post">
+                        <form action="" method="post">
                             <div class="form-group row">
                                 <label for="nama" class="col-sm-3 col-form-label">Nama</label>
                                 <div class="col-sm-9">
@@ -190,19 +190,43 @@
                                     <input type="text" class="form-control" id="totalharga" name="total_harga">
                                 </div>
                             </div>
+                            
+                        </form>
+
+                            <!-- Prototype Button -->
                             <div class="button d-flex justify-content-end mt-5 mb-4">
                                 <button class="btn btn-danger mr-2">
                                     <a href="<?= BASEURL ?>/home">Kembali</a>
                                 </button>
-                                <button type="submit" class="btn btn-primary ml-2">
+                                <button type="" class="btn btn-primary ml-2" data-toggle="modal" data-target="#exampleModal">
                                     Booking Sekarang
                                 </button>
                             </div>
-                        </form>
 
                     </div>
                 </div>
                 <!-- End of Container Form -->
+
+                <!-- Modal Design -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header alert-modal">
+                                <h5 class="modal-title" id="exampleModalLabel">Booking Sukses!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Selamat, Tiketmu Berhasil DiBooking!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Kembali Ke Beranda</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Modal Design -->
 
             </div>
             <!-- End of Main Content -->

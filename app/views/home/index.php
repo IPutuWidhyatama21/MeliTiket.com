@@ -51,6 +51,16 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
+            <!-- Nav Item - Logout -->
+            <div class="logout-btn">
+                <li class="nav-item text-center fixed-bottom logout-button">
+                    <a class="nav-link" href="" data-toggle="modal" data-target="#logoutModal">
+                        <span>Logout</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </div>
+
             <!-- Sidebar Button Closer (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
