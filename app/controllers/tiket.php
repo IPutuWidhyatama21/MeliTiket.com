@@ -1,13 +1,13 @@
 <?php
 
-class Admin extends Controller{
+class Tiket extends Controller{
 
     public function index() {
 
-        $data['title'] = "Dashboard Admin";
+        $data['title'] = "Tiket";
 
         $this->view('templates/header1', $data);
-        $this->view('admin/index', $data);
+        $this->view('tiket/index', $data);
         $this->view('templates/footer');
     }
 }
